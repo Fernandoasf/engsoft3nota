@@ -1,7 +1,7 @@
 import unittest
 from unittest import mock
 import psycopg2
-
+from Adicionar import adicionar_produto
 
 class TestAdicionarProduto(unittest.TestCase):
     @mock.patch('psycopg2.connect')
