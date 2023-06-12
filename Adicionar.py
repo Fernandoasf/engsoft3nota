@@ -1,5 +1,8 @@
 #função que adiciona um produto no estoque
-def adicionar_produto(estoque, codigo, nome, valor, quantidade):
+def adicionar_produto(estoque, codigo, nome, valor, quantidade, cancelar=False):
+    
+    if cancelar:
+        return "Operação cancelada"
 
     if codigo not in estoque.produtos:
         estoque.produtos[codigo] = {'nome': nome, 'valor': valor, 'quantidade': quantidade}

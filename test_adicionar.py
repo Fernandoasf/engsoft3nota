@@ -13,3 +13,4 @@ def teste_adicionar_produto():
     resposta = adicionar_produto(estoque, 1, 'arroz', 5.50, 100)
     assert "Um produto com o mesmo código já foi adicionado" == resposta
 
+    
